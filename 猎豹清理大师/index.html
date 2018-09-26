@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<div class="headerin">
+				<img src="img/logo_black01.png" class="logo fl"/>
+				<li class="fr" id="caidan"><span></span></li>
+				<a href="#" class="nav">更新</a>
+				<a href="#" class="nav">论坛</a>
+			</div>
+		</div>
+		<div class="headernone">
+			<ul>
+				<li>
+					<h1>产品</h1>
+					<p><span></span>Clean Master</p>
+					<p><span></span>CM  Security</p>
+					<p><span></span>CM Browser</p>
+					<p><span></span>Battery Doctor</p>
+					<p><span></span>Photo Grid</p>
+					<p><span></span>CM Backup</p>
+					<p><span></span>CM Behavior Cloud</p>
+				</li>
+				<li>
+					<h1>媒体</h1>
+					<p><span></span>新闻</p>
+					<p><span></span>宣传资料</p>
+					<p><span></span>博客</p>
+				</li>
+				<li>
+					<h1>关于</h1>
+					<p><span></span>公司信息</p>
+					<p><span></span>投资关系</p>
+					<p><span></span>推广策略</p>
+					<p><span></span>广告联系</p>
+					<p><span></span>告诉我们</p>
+				</li>
+			</ul>
+		</div>
+		<div class="banner1">
+			<div class="banner1ins">
+				<div class="br1one"></div>
+				<img src="img/t.png" class="br1two"/>
+				<a href="#" class="download">立即下载</a>
+			</div>
+		</div>
+		<div class="banner2">
+			<div class="banner2ins">
+				<span class="span"></span>
+				<span class="span"></span>
+				<span class="span"></span>
+				<span class="span"></span>
+				<span class="span"></span>
+				<img src="img/p.png" class="br2one" />
+				<img src="img/t2.png" class="br2two" />
+				<div class="br2treen">
+					<h4>首次清理可腾出高达2GB的空间</h4>
+					<p>多存200首音乐或是400张照片，尽情享用吧</p>
+				</div>
+			</div>
+		</div>
+		<div class="banner3">
+			<div class="banner3ins">
+				<img src="img/t3.png" alt="" />
+				<ul>
+					<li><img src="img/s2.png"/>
+						<div class="one"><h2>禁止顽固自启</h2>
+							<p>独创禁止顽固自启，别人反复禁止不掉的自启软件，我们一键搞定</p>
+						</div>
+						<div class="two"><h4>再次打开手机</h4><p>别家禁止不了的自启软件都不见了</p></div></li>
+					<li><img src="img/s4.png"/>
+						<div class="one"><h2>CPU降温</h2>
+							<p>对上万款APP的深入检测，终于随时为您揪出CPU功耗大户，温度不上升手机不卡顿</p>
+						</div>
+						<div class="two"><h4>上万款APP检测</h4><p>诞生独家CPU降温技术</p></div></li>
+						<li><img src="img/s3.png"/>
+						<div class="one"><h2>卡慢检测</h2>
+							<p>电话接不起?刷朋友圈卡卡的？卡慢检测及时提醒，找出	真凶一键解决。</p>
+						</div>
+						<div class="two"><h4>首次推出卡慢检测</h4><p>疑难杂症克星</p></div></li>
+					<div class="fl"><img src="img/s1.png"/></div>
+					<div class="fl"><img src="img/s1.png"/></div>
+					<div class="fl"><img src="img/s1.png"/></div>
+				</ul>
+			</div>
+		</div>
+		<div class="banner4">
+			<div class="banner4ins">
+				<img src="img/t4.png" class="imgone"/>
+				<img src="img/d1.png" class="imgtwo"/>
+				<img src="img/d2.png" class="imgtreen"/>
+				<div class="div1"><h4>安全隐私</h4><p>最全历史记录清理，手机一秒变无痕；</p><p>全新隐私扫描，私密聊天图片不再泄露。</p></div>
+				<div class="div2"><h4>软件管理</h4><p>支持卸载预装应用，手机瘦身又减负；</p><p>使用软件一目了然，卸载更贴心。</p></div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footerin">
+				<p>Cheetah Mobile © 2015</p>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		var h;
+		setInterval(function(){
+			h = $(document).scrollTop()
+			if (h>=100) {
+				$(".header").animate({
+					height:"50px"
+				},10)
+				$(".nav").animate({
+					lineHeight:"50px",
+					width:"100px"
+				},10)
+				$(".logo").animate({
+					width:"70px",
+					height:"35px"
+				},10)
+				$("#caidan").animate({
+					marginTop:"0px"
+				},10)
+			}else if(h <100){
+				$(".header").animate({
+					height:"100px"
+				},10)
+				$(".nav").animate({
+					lineHeight:"100px",
+					width:"120px"
+				},10)
+				$(".logo").animate({
+					width:"140px",
+					height:"70px"
+				},10)
+				$("#caidan").animate({
+					marginTop:"25px"
+				},10)
+			}
+			if (h<400) {
+				$(".banner1ins").addClass(" banner1in")
+				$(".banner1ins").removeClass("banner1ins")
+			}
+			if (h>=800&&h<1200) {
+				$(".banner2ins").addClass(" banner2in")
+				$(".banner2ins").removeClass("banner2ins")
+			}
+			if (h>=1600&&h<2000) {
+				$(".banner3ins").addClass(" banner3in")
+				$(".banner3ins").removeClass("banner3ins")
+			}
+			if (h>=2400) {
+				$(".banner4ins").addClass(" banner4in")
+				$(".banner4ins").removeClass("banner4ins")
+			}
+		},100)
+		var i = 0;
+		$("#caidan").click(function(){
+			$(".headernone").stop()
+			i++
+			if(i == 3){
+				i = 1
+			}
+			if(i == 1){
+				$(".headernone").animate({
+					height:"100%"
+				},500)
+				$("#caidan").css('background','#DADADA'	)
+			}else if(i == 2){
+				$(".headernone").animate({
+					height:"0%"
+				},500,function(){
+					$("#caidan").css('background','none'	)
+				})
+			}
+		})
+	</script>
+</html>
