@@ -1,0 +1,266 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.header{
+	position: relative;
+	width: 100%;
+	height: 590px;
+	background: url(../img/3face.jpg) no-repeat center -6px;
+	background-size: 100%;
+}
+.headerin{
+	position: absolute;
+	height: 80px;
+	width: 1200px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.headerin .logo a{
+	display: block;
+	width: 130px;
+	height: 68px;
+	margin-top: 6px;
+	margin-left: 10px;
+	background: url(../img/logo-b.png) no-repeat center center;
+	text-indent: -99999px;
+}
+.headerin .nav li{
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 68px;
+}
+.headerin .nav li a{
+	padding: 0;
+	color: #FFFEFE;
+	display: inline;
+	font-size: 18px;
+	font-weight: 600;
+    text-decoration: none;
+    transition: .3s;
+}
+.headerin .nav li a:hover{
+	color: #AB9797;
+	background: none;
+}
+.banner{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.banner p{
+	font-size: 2.8em;
+	width: 700px;
+	margin: 0 auto;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 260px;
+    color: #fff;
+}
+.main{
+	width: 100%;
+}
+.mainin{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.mainin .mainin-left,.mainin .mainin-right{
+	margin-top: 30px;
+}
+.mainin .mainin-left>div,.mainin .mainin-right>div{
+	width: 360px;
+	height: 360px;
+	margin: 15px;
+}
+.mainin .mainin-left{
+	width: 390px;
+}
+.mainin .mainin-right{
+	width: 780px;
+}
+.mainin .mainin-left>div{
+}
+.mainin .mainin-left>div>div,.mainin .mainin-right>div>div{
+	width: 100%;
+	height: 100%;	
+	background: rgba(0,0,0,.4);
+	opacity: 0;
+	transition: .3s;
+	text-align: center;
+	padding-top: 9em;
+}
+.mainin .mainin-left>div>div h4,.mainin .mainin-right>div>div h4{
+	color: white;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.mainin .mainin-left>div>div p,.mainin .mainin-right>div>div p{
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+}
+.mainin .mainin-left>div:hover>div{
+	opacity: 1;
+}
+.mainin .mainin-right>div:hover>div{
+	opacity: 1;
+}
+.mainin .mainin-left .left-treen{
+	height: 750px;
+}
+.mainin .mainin-left .left-treen>div{
+	padding-top: 22em;
+}
+.mainin .mainin-right .right-one{
+	width: 750px;
+}
+.footer{
+	width: 100%;
+}
+.footerin{
+	width: 1200px;
+	height: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.footerin h1{
+    font-size: 3.5em;
+    font-weight: 300;
+    margin-top: 80px;
+}
+.footerin li{
+	float: left;
+	margin-right: 200px;
+}
+.footerin li h2{
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 1em 0px;
+}
+.footerin li p{
+	font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    padding: 7px 0px;
+}
+.footerin .footer-left p a{
+	color: deepskyblue;
+	transition: .3s;
+	text-decoration: none;
+}
+.footer .footer-left p a:hover{
+	color: #777;
+}
+.footerin .footer-center p a{
+    color: #1B242F;
+    text-decoration: none;
+    transition: .3s;
+}
+.footerin .footer-center p a:hover{
+	color: deepskyblue;
+}
+.footerin li input{
+	width: 300px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    outline: none;
+}
+.footerin li textarea{
+	width: 300px;
+	height: 8em;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    resize: none;
+}
+.footerin li button{
+	cursor: pointer;
+	padding: 14px 1.5em;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: black;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: .3s;
+}
+.footerin li button:hover{
+	color: #000;
+    background-color: deepskyblue;
+}
+.footer-bottom{
+	width: 100%;
+	height: 80px;
+    background-color: #231F20;
+    text-align: center;
+    padding: 1.5em 0em;
+}
+.footer-bottom p{
+    color: #fff;
+    font-size: 15px;
+}
+.footer-bottom a{
+	color: deepskyblue;
+	transition: .3s;
+}
+.footer-bottom a:hover{
+    color: rgba(255, 0, 0, 0.77);
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
