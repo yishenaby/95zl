@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>商城后台</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" rel="stylesheet">
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				outline: none;
+				list-style: none;
+				text-decoration: none;
+			}
+			.fl{
+				float: left;
+			}
+			.fr{
+				float: right;
+			}
+			.box{
+				width: 1000px;
+				margin: 100px auto;
+				overflow: hidden;
+			}
+			.top{
+				overflow: hidden;
+			}
+			.top>div{
+				overflow: hidden;
+			}
+			.top h4{
+				width: 110px;
+			}
+			.top h4,.top input{
+				margin: 10px;
+				height: 40px;
+				padding: 5px;
+			}
+			.top input{
+				width: 240px;
+			}
+			.top button{
+				background: lightskyblue;
+				font-size: 18px;
+				color: gray;
+				margin: 10px;
+			}
+			.center{
+				overflow: hidden;
+			}
+			.center button{
+				margin: 10px;
+			}
+			.bottom{
+				margin-top: 10px;
+				overflow: hidden;
+			}
+			.bottom input{
+				width: 18px;
+				height: 18px;
+			}
+			.bottom td{
+				padding:  6px 2.2em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box" id="app">
+			<div class="top">
+				<div><h4 class="fl">文章ID</h4><input class="fl" type="text"  /><h4 class="fl">作者</h4><input class="fl" type="text" /></div>
+				<div class="fl"><h4 class="fl">标题</h4><input class="fl" type="text" /><h4 class="fl">文章标签</h4><input class="fl" type="text" /></div>
+				<button class="fl btn">搜索</button>
+			</div>
+			<div class="center">
+				<button class="fl btn" v-onclick="del">删除</button>	
+				<button class="fl btn" v-onclick="add">添加</button>
+			</div>
+			<div class="bottom">
+				<table border="1px" >
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td>文章ID</td>
+						<td>文章标签</td>
+						<td>文章标题</td>
+						<td>作者</td>
+						<td>上传时间</td>
+						<td>发布状态</td>
+						<td>操作</td>
+					</tr>
+					
+				</table>
+			</div>
+		</div>
+	</body>
+	<script src="../js/vue.js"></script>
+	<script>
+		new Vue({
+			el:"#app",
+			data:{
+				lists:"a"
+			},
+			mounted:function(){
+				this.lists = localStorage.getItem("content")
+			},
+			media:{
+				add:function(){
+					alert("添加")
+				},
+				del:function(){
+					alert("删除")
+				}
+			}
+		})
+	</script>
+</html>
